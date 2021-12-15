@@ -17,6 +17,8 @@ let container, renderer, scene, camera, controls, composer;
 // let sceneContent;
 
 export default {
+ // props: ["inputA", "inputB"]
+
   data() {
     return {};
   },
