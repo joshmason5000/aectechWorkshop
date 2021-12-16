@@ -1,7 +1,7 @@
 <template>
   <div>
     <Three intpuA="foo" inputB="bar" /> 
-    <h1> HellowWorld</h1>
+    <h1> Hello World</h1>
     <div>
       <p> Test your backend connection. </p>
       <input type = "button" value="Check" @click="runCheck" />

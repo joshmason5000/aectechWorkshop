@@ -10,7 +10,7 @@
     <div id="wrapper">
       <div id="container" @mousedown="onMouseDown" @mouseup="onMouseUp"></div>
     </div>
-    
+
   </div>
 
 </template>
@@ -28,11 +28,23 @@
   // let sceneContent;
 
   export default {
-    props: ["inputA", "inputB"],
+    //props: ["inputA", "inputB"],
 
     data() {
-      return {};
+      return {
+        
+        inputA: "apples",
+        inputB: "modified"
+        
+      };
+            
     },
+    created() {
+      setTimeout(() => {
+        this.inputB = "oranges";
+      }, 4000);
+    },
+      
     methods: {
       onContainerResize() {
         camera.aspect = container.clientWidth / container.clientHeight;
