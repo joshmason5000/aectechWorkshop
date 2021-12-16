@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Three /> 
+    <Three intpuA="foo" inputB="bar" /> 
     <h1> HellowWorld</h1>
     <div>
       <p> Test your backend connection. </p>
